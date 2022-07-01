@@ -54,10 +54,9 @@ public class ClienteTableModel extends AbstractTableModel  implements TableModel
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         Cliente cliente = clientes.get(rowIndex);
         switch (columnIndex) {
-            case 0 -> cliente.setNome((String) aValue);
-            case 1 -> cliente.setEmail((String) aValue);
-            case 2 -> cliente.setTelefone((String) aValue);
-            case 3 -> cliente.setEndereco((String) aValue);
+            case 2 -> cliente.setEmail((String) aValue);
+            case 3 -> cliente.setTelefone((String) aValue);
+            case 4 -> cliente.setEndereco((String) aValue);
         }
         fireTableCellUpdated(rowIndex,columnIndex);
     }
